@@ -1,0 +1,22 @@
+#!/bin/bash
+
+LEDS="/opt/leds/"
+VENV_NAME=".env"
+
+VENV="${LEDS}/${VENV_NAME}"
+if [ ! -d "${VENV}" ]; then
+
+	if [ "${EUID}" -ne "0" ]; then
+		echo "Virtual environment not initialized."
+		echo "Please run this command as root once."
+		exit 1
+	fi
+
+	echo "Initializing virtual environment..."
+	cd "${LEDS}" \
+	&& /usr/bin/python -m venv .env \
+	&& . "${VENV_NAME}/bin/activate" \
+	&& "${VENV}/bin/pip" install -r requirements.txt
+fi
+
+/opt/leds/.env/bin/python /opt/leds/leds.py "$@"
