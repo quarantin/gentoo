@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Retrieve the current keyboard configuration
+KBDOPTIONS=$(/usr/bin/setxkbmap -query | sed -n 's/^options:[[:space:]]*\(.*\)/\1/p')
+
+# Retrieve the current i3 workspace
+WORKSPACE=$(/usr/bin/i3-msg -t get_workspaces | /usr/bin/jq -r '.[] | select(.focused==true).name')
+
+# Disable VT switching
+/usr/bin/setxkbmap -option srvrkeys:none
+
+# Switch to workspace 0
+/usr/bin/i3-msg workspace 0
+
+# Lock the screen
+/usr/bin/xtrlock
+
+# Switch back to previous i3 workspace on unlock
+/usr/bin/i3-msg workspace "${WORKSPACE}"
+
+# Enable VT switching
+/usr/bin/setxkbmap -option
+
+# Restore keyboard configuration
+/usr/bin/setxkbmap -option "${KBDOPTIONS}"
