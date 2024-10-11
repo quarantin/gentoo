@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ ! -f .config ]; then
+	cd /usr/src/linux
+fi
+
+time /usr/bin/make -j 32 \
+&& /usr/bin/make modules_install \
+&& /usr/bin/make install \
+&& /usr/bin/grub-mkconfig -o /boot/grub/grub.cfg
