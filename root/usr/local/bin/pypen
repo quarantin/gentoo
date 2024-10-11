@@ -1,0 +1,39 @@
+#!/bin/bash
+
+if [ -z "${1}" ]; then
+	echo "Usage: ${0} <python path> [arguments...]"
+	exit 1
+fi
+
+if [ -z "${EDITOR}" ]; then
+	echo "Please set the EDITOR environment variable"
+	exit 1
+fi
+
+FILE=$(python -c "
+import importlib.util
+
+def resolve_python_path(python_path):
+    path = str(python_path)
+    tokens = path.split('.')
+    for _ in range(0, len(tokens)):
+        try:
+            spec = importlib.util.find_spec(path)
+
+        except ModuleNotFoundError:
+            path = path.rsplit('.', 1)[0]
+            continue
+
+        if spec is not None:
+            return spec.origin
+
+    raise Exception(f'Module not found: {python_path}')
+
+print(resolve_python_path('${1}'))
+")
+
+if [ -f "${FILE}" ]; then
+	"${EDITOR}" "${FILE}" "${@:2}"
+else
+	echo "${FILE}"
+fi
