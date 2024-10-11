@@ -1,0 +1,2 @@
+xss-lock -- /usr/local/bin/lock-screen &
+openrgb --server --server-host 127.0.0.1 &
