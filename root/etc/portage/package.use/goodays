@@ -1,0 +1,99 @@
+dev-libs/xmlsec doc gcrypt gnutls
+# dev-python/setuptools python_targets_python3_11
+# dev-python/installer python_targets_python3_11
+# dev-python/gpep517 python_targets_python3_11
+# dev-python/flit-core python_targets_python3_11
+# dev-python/packaging python_targets_python3_11
+# dev-python/platformdirs python_targets_python3_11
+# dev-python/wheel python_targets_python3_11
+# dev-python/more-itertools python_targets_python3_11
+# dev-python/jaraco-context python_targets_python3_11
+# dev-python/jaraco-functools python_targets_python3_11
+# dev-python/jaraco-text python_targets_python3_11
+# dev-python/cython python_targets_python3_11
+# dev-python/markupsafe python_targets_python3_11
+# dev-python/jinja python_targets_python3_11
+# dev-python/lxml python_targets_python3_11
+# dev-python/setuptools-scm python_targets_python3_11
+# dev-python/trove-classifiers python_targets_python3_11
+# dev-python/charset-normalizer python_targets_python3_11
+# dev-python/idna python_targets_python3_11
+# dev-python/PySocks python_targets_python3_11
+# dev-python/pathspec python_targets_python3_11
+# dev-python/tree-sitter python_targets_python3_11
+# dev-python/msgpack python_targets_python3_11
+# dev-python/editables python_targets_python3_11
+# dev-python/olefile python_targets_python3_11
+# dev-python/chardet python_targets_python3_11
+# dev-python/argcomplete python_targets_python3_11
+# dev-python/click python_targets_python3_11
+# dev-python/distlib python_targets_python3_11
+# dev-python/distro python_targets_python3_11
+# dev-python/pyproject-hooks python_targets_python3_11
+# dev-python/resolvelib python_targets_python3_11
+# dev-python/truststore python_targets_python3_11
+# dev-python/typing-extensions python_targets_python3_11
+# dev-python/fastjsonschema python_targets_python3_11
+# dev-python/lark python_targets_python3_11
+# dev-python/mdurl python_targets_python3_11
+# dev-python/uc-micro-py python_targets_python3_11
+# dev-python/mako python_targets_python3_11
+# dev-python/certifi python_targets_python3_11
+# dev-python/lazy-object-proxy python_targets_python3_11
+# dev-python/pluggy python_targets_python3_11
+# dev-python/poetry-core python_targets_python3_11
+# dev-python/linkify-it-py python_targets_python3_11
+# dev-python/hatchling python_targets_python3_11
+# dev-python/snakeoil python_targets_python3_11
+# dev-python/markdown-it-py python_targets_python3_11
+# dev-python/pygments python_targets_python3_11
+# dev-python/hatch-vcs python_targets_python3_11
+# dev-python/userpath python_targets_python3_11
+# dev-python/colorama python_targets_python3_11
+# dev-python/urllib3 python_targets_python3_11
+# dev-python/rich python_targets_python3_11
+# dev-python/pipx python_targets_python3_11
+# dev-python/requests python_targets_python3_11
+# dev-python/pip python_targets_python3_11
+# dev-python/pycairo python_targets_python3_11
+# dev-python/pygobject python_targets_python3_11
+# dev-python/pillow python_targets_python3_11
+#
+# [ebuild   R    ] dev-lang/python-exec-conf-2.4.6:2::gentoo  PYTHON_TARGETS="python3_12 (-pypy3) -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] sys-apps/i2c-tools-4.3-r2::gentoo  USE="-debug -python" PYTHON_TARGETS="python3_12 -python3_10 -python3_11*" 0 KiB
+# [ebuild   R    ] dev-lang/python-exec-2.4.10:2::gentoo  USE="(native-symlinks) -test" PYTHON_TARGETS="(pypy3) (python3_10) (python3_11) (python3_12) (-python3_13)" 83 KiB
+# [ebuild   R    ] dev-build/meson-format-array-0::gentoo  PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] sys-apps/util-linux-2.39.4-r1::gentoo  USE="cramfs hardlink logger ncurses nls pam readline su suid udev (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -python (-rtas) (-selinux) -slang -static-libs -systemd -test -tty-helpers -verify-sig" ABI_X86="32 (64) (-x32)" PYTHON_TARGETS="python3_12 -python3_10 -python3_11*" 0 KiB
+# [ebuild   R    ] dev-libs/libxml2-2.12.7:2::gentoo  USE="ftp icu python readline -debug -examples -lzma -static-libs -test" ABI_X86="32 (64) (-x32)" PYTHON_TARGETS="python3_12 -python3_10 -python3_11*" 0 KiB
+# [ebuild   R    ] dev-build/meson-1.5.1::gentoo  USE="-test -verify-sig" PYTHON_TARGETS="python3_12 (-pypy3) -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] app-misc/pax-utils-1.3.7::gentoo  USE="-caps -man -python (-seccomp) -test" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11" 112 KiB
+# [ebuild   R    ] dev-libs/libxslt-1.1.39::gentoo  USE="crypt -debug -examples -python -static-libs" ABI_X86="(64) -32 (-x32)" PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] sys-apps/systemd-utils-254.17::gentoo  USE="acl kmod tmpfiles udev -boot -kernel-install -secureboot (-selinux) (-split-usr) -sysusers -test -ukify" ABI_X86="32 (64) (-x32)" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11" 0 KiB
+# [ebuild   R    ] media-libs/alsa-lib-1.2.12::gentoo  USE="-alisp -debug -doc -python" ABI_X86="(64) -32 (-x32)" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] sys-libs/libseccomp-2.5.5-r1::gentoo  USE="-debug (-experimental-loong) -python -static-libs -test" ABI_X86="(64) -32 (-x32)" PYTHON_TARGETS="python3_12 -python3_10 -python3_11*" 0 KiB
+# [ebuild   R    ] net-misc/rsync-3.3.0-r1::gentoo  USE="acl iconv ssl xattr -examples -lz4 -rrsync -stunnel -system-zlib -verify-sig -xxhash -zstd" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 1,127 KiB
+# [ebuild   R    ] dev-util/glib-utils-2.78.6::gentoo  PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] dev-util/gdbus-codegen-2.78.6::gentoo  PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] dev-util/itstool-2.0.7-r2::gentoo  PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] x11-base/xcb-proto-1.17.0::gentoo  PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] app-text/asciidoc-10.2.1::gentoo  USE="-test" PYTHON_SINGLE_TARGET="python3_12 (-pypy3) -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] dev-libs/libnl-3.10.0:3::gentoo  USE="-debug -python -test -utils" ABI_X86="(64) -32 (-x32)" PYTHON_TARGETS="python3_12 -python3_10 -python3_11*" 0 KiB
+# [ebuild   R    ] sys-libs/libcap-ng-0.8.5::gentoo  USE="-python -static-libs" PYTHON_TARGETS="python3_12 -python3_10 -python3_11*" 0 KiB
+# [ebuild   R    ] app-admin/ps_mem-3.14-r1::gentoo  PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11" 0 KiB
+# [ebuild   R    ] sys-apps/file-5.45-r4::gentoo  USE="bzip2 seccomp zlib -lzip -lzma -python -static-libs -verify-sig -zstd" ABI_X86="(64) -32 (-x32)" PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] dev-libs/tree-sitter-bash-0.23.1::gentoo  USE="python -debug -test" PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] sys-apps/usbutils-017::gentoo  USE="-python" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] sys-apps/pkgcore-0.12.28::gentoo  USE="-test" PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] app-eselect/eselect-repository-14::gentoo  USE="-test" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] dev-util/pkgcheck-0.10.31::gentoo  USE="-emacs -test" PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] dev-db/postgresql-16.4:16::gentoo  USE="icu lz4 nls pam readline server ssl xml zlib zstd -debug -doc -kerberos -ldap -llvm -perl -python (-selinux) -static-libs -systemd -tcl -uuid" LLVM_SLOT="18 -15 -16 -17 (-19)" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] app-admin/syslog-ng-4.6.0::gentoo  USE="-amqp -caps -dbi -geoip2 -grpc -http -json -kafka -mongodb -pacct -python -redis -smtp -snmp -spoof-source -systemd -tcpd -test" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11" 0 KiB
+# [ebuild   R    ] dev-libs/gobject-introspection-1.78.1-r1::gentoo  USE="-doctool -gtk-doc -test" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] app-text/yelp-tools-42.1::gentoo  PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11" 0 KiB
+# [ebuild   R    ] app-arch/brotli-1.1.0:0/1::gentoo  USE="-debug -python -test" ABI_X86="(64) -32 (-x32)" PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] sys-libs/libomp-18.1.8:0/18.1::gentoo  USE="-debug -gdb-plugin -hwloc -offload -ompt -test -verify-sig" ABI_X86="32 (64) (-x32)" LLVM_TARGETS="(-AMDGPU) -NVPTX" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] net-wireless/bluez-5.77:0/3::gentoo  USE="cups mesh obex readline udev -btpclient -debug -deprecated -doc -experimental -extra-tools -midi (-selinux) -systemd -test -test-programs" ABI_X86="(64) -32 (-x32)" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
+# [ebuild   R    ] dev-libs/libpeas-1.36.0::gentoo  USE="gtk python -glade -gtk-doc -lua -test -vala" LUA_SINGLE_TARGET="lua5-1 -luajit" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11" 0 KiB
+# [ebuild   R    ] app-crypt/gpgme-1.23.2-r2:1/11.6.15.2::gentoo  USE="cxx qt5 qt6 -common-lisp -debug -python -static-libs -test -verify-sig" PYTHON_TARGETS="python3_12 -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] app-portage/gemato-20.6::gentoo  USE="gpg -pretty-log -test -tools" PYTHON_TARGETS="python3_12 (-pypy3) -python3_10 -python3_11* (-python3_13)" 0 KiB
+# [ebuild   R    ] dev-vcs/git-2.45.2::gentoo  USE="blksha1 curl gpg iconv nls pcre perl safe-directory webdav -cgi -cvs -doc -highlight -keyring -mediawiki -perforce (-selinux) -subversion -test -tk -xinetd" PYTHON_SINGLE_TARGET="python3_12 -python3_10 -python3_11 (-python3_13)" 0 KiB
