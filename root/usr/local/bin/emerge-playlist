@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [ "${EUID}" != "0" ]; then
+	echo "Need root privileges to run this command!"
+	exit 1
+fi
+
+PLAYLIST="${1}"
+if [ -z "${PLAYLIST}" ]; then
+	echo "Usage: ${0} <playlist>"
+	exit 1
+fi
+
+if [ ! -f "${PLAYLIST}" ]; then
+	echo "No such file or directory: ${PLAYLIST}"
+	exit 1
+fi
+
+PLAYLISTLOG="${PLAYLIST}.log"
+touch "${PLAYLISTLOG}"
+
+
+PACKAGES="$(grep -F -x -v -f "${PLAYLISTLOG}" "${PLAYLIST}")"
+while IFS= read PACKAGE; do
+
+	emerge --oneshot "${PACKAGE}"
+	if [ "${?}" = "0" ]; then
+		echo "${PACKAGE}" >> "${PLAYLISTLOG}"
+	fi
+
+done <<< "${PACKAGES}"
