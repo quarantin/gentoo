@@ -1,0 +1,6 @@
+#!/bin/sh
+
+UPGRADES=$(emerge -pvuDN @world | grep "^\[ebuild" | cut -f2 -d']' | cut -f2 -d' ' | sed 's/::gentoo$//')
+if [ ! -z "${UPGRADES}" ]; then
+	/usr/bin/notify-send -t 10000 "Updates Available" "${UPGRADES}"
+fi
