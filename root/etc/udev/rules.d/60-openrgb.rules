@@ -1,0 +1,2 @@
+KERNEL=="i2c-[0-9]*", RUN+="/usr/bin/setfacl -m u:openrgb:rw /dev/%k"
+SUBSYSTEMS=="usb|hidraw", ATTRS{idVendor}=="048d", ATTRS{idProduct}=="5702", TAG+="Gigabyte_RGB_Fusion_2_USB", RUN+="/usr/bin/setfacl -m u:openrgb:rw /dev/%k"
