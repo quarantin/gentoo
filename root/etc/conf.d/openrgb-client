@@ -1,0 +1,5 @@
+. /etc/conf.d/openrgb-common
+
+description="Init script to set OpenRGB mode at boot time"
+command_args="--mode 'Color Cycle'"
+rc_need="openrgb-server"

@@ -1,0 +1,4 @@
+command="/usr/bin/openrgb"
+command_background=yes
+user="openrgb"
+group="openrgb"

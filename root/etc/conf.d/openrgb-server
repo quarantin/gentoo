@@ -1,0 +1,5 @@
+. /etc/conf.d/openrgb-common
+
+description="Init script to run OpenRGB server at boot time"
+command_args="--server --server-host 127.0.0.1"
+rc_need="localmount"
